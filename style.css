@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+
+
 :root {
   /* color variables */
   --accent-color: #eaf2f5;
@@ -24,7 +26,8 @@
   --phone-app-shadow: #c7e1eb;
   --alpha-primary-color: rgba(255, 255, 255, 0.5);
   --rating-color: #ffa800;
-
+  
+ 
   /* transition curves */
   --transition-curve: cubic-bezier(0.36, -0.21, 0.16, 1.97);
 }
@@ -93,12 +96,14 @@ section {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 
   .logo {
-    height: 5rem;
+    height: 3rem;
     cursor: pointer;
   }
   .toggle {
     display: none;
   }
+
+ 
 
   ul {
     display: flex;
@@ -186,9 +191,9 @@ section {
     width: 40%;
   }
   h1 {
-    font-size: 3rem;
-    line-height: 3.5rem;
-    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 600;
     color: var(--secondary-text-color);
   }
   p {
@@ -451,6 +456,25 @@ section {
     .title {
       margin: 2rem 0;
       font-size: 4rem;
+      display:flex;
+      flex-direction: row;
+    }
+   
+    .Poko {
+      width: 300px; /* Set the width of the image */
+      height: auto; /* Maintain the aspect ratio */
+      border: 2px solid #ccc; /* Add a border around the image */
+      border-radius: 10px; /* Round the corners of the image */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+      transition: transform 0.3s; /* Smooth transition for hover effect */
+     display: block;   /*Ensure it displays as a block element */
+      margin:20px auto; /* Center the image horizontally with margin */
+   
+    }
+    
+    .Poko:hover {
+      transform: scale(1.05); /* Scale up the image on hover */
+     
     }
     .info {
       line-height: 2rem;
@@ -811,7 +835,7 @@ section {
     left: 35%;
   }
 
-  .pizzapan {
+  .pasta {
     position: absolute;
     width: 100%;
     height: 100%;
